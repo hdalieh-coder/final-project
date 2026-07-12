@@ -23,19 +23,19 @@ img {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 48px;
     color: #1a202c;
     line-height: 1.25;
 }
 
 p {
     line-height: 1.5;
-    display: block;
+    font-size: 18px;
 }
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -218,7 +218,7 @@ HEADER / ABOUT US
 
 header .row {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -227,7 +227,6 @@ header .row {
 }
 
 .header__description--para {
-    font-size: 16px;
     margin: 32px 0;
 }
 
@@ -280,13 +279,13 @@ header .row {
 
 .header__customers {
     margin-top: 16px;
-    padding-right: 64px;
+    padding-right: 128px;
     opacity: 0.5;
 }
 
 .header__img {
     width: 100%;
-    max-width: 512px;
+    max-width: 768px;
 }
 
 .header__img--wrapper {
