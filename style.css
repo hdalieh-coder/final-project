@@ -25,8 +25,7 @@ img {
 h1 {
     font-size: 48px;
     color: #1a202c;
-    line-height: 1.25;
-    
+    line-height: 1.25;   
 }
 
 p {
@@ -37,12 +36,6 @@ p {
 .row {
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
-}
-
-.row__narrow {
-    width: 100%;
-    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -102,10 +95,23 @@ nav {
     border-bottom: 2px solid transparent;
     position: relative;
     margin: 0 24px;
+    padding-bottom: 5px;
 }
 
-.nav__link:hover {
-    text-decoration: underline;
+.nav__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #6415ff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav__link:hover::after {
+    opacity: 1;
 }
 
 .nav__link--primary {
@@ -123,6 +129,10 @@ nav {
 .nav__link--primary:hover {
     text-decoration: none;
     background-color: rgba(60, 13, 153);
+}
+
+.nav__link--primary:hover::after {
+    display: none;
 }
 
 .nav__logo {
@@ -267,6 +277,10 @@ header .row {
     border-color: rgba(100, 21, 255);
 }
 
+.header__email--input::placeholder {
+    color: rgba(160, 174, 192);
+}
+
 .header__email--btn {
     z-index: 2;
     margin: 8px;
@@ -284,6 +298,7 @@ header .row {
 
 .header__email--btn:hover {
     background-color: rgba(60, 13, 153);
+    transition: all 300ms ease;
 }
 
 .header__customers--title {
