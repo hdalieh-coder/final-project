@@ -148,6 +148,10 @@ nav {
     letter-spacing: 0.6px;
 }
 
+button {
+    cursor: pointer;
+}
+
 .btn__menu {
     display: none;
     background: transparent;
@@ -1280,7 +1284,11 @@ a {
     background-color: rgba(203, 213, 224);
 }
 
-/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+/* 
+
+SMALL PHONES, TABLETS, LARGE SMARTPHONES 
+
+*/
 
 @media(max-width: 1280px) {
     header .row {
